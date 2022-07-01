@@ -1,0 +1,41 @@
+<html>
+<head>
+  <link href="registration.component.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div style = "position:relative; left:-20px; top:-200px;" class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-50">
+        <div class="card">
+          <h2 class="card-title text-left">Registration</h2>
+          <div class="card-body py-md-10">
+            <form name="f1">
+              <div style = "position:relative; top: -10px;" class="form-inline">
+                <label class="col-sm-3 col-form-label is-required">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
+              </div>
+              <div class="form-inline">
+                <label class="col-sm-3 col-form-label is-required">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" name = "pass1" onChange="check_pass()" required>
+              </div>
+              <div class="form-inline">
+                <label class="col-sm-3 col-form-label is-required">Repeat Password</label>
+                <input type="password" class="form-control" id="repeatpassword" name = "pass2" placeholder="Repeat Password" onChange="check_pass()" required>
+                
+              </div>
+              <div class="form-inline">
+                <label class="col-sm-3 col-form-label is-required">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" required>
+              </div>
+              <div style = "position:relative; top: 10px;" class="d-flex flex-row align-items-center">
+                <button class="btn">Submit</button>
+                <button class="btn btn-primary">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
